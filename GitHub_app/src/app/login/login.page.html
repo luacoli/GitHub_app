@@ -22,14 +22,18 @@
     <ion-label class="login__label" for="username">senha:</ion-label>
     <ion-input id="username" class="input__text" type="password"></ion-input>
 
-    <ion-button class="button__fill">Login</ion-button>
+    <ion-button class="button__fill">
+      <ion-router-link href="/main" color="dark"> Login </ion-router-link>
+    </ion-button>
   </ion-item-group>
 
   <ion-item-group class="login__to__register">
     <h3>Novo por aqui?</h3>
     <ion-button class="button__borded">
-      Faça seu cadastro
-      <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      <ion-router-link href="/cadastro" class="link" color="dark">
+        Faça seu cadastro
+        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-router-link>
     </ion-button>
   </ion-item-group>
 </ion-content>
