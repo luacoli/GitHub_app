@@ -7,15 +7,11 @@ const routes: Routes = [
     loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
   },
   {
-    path: 'github',
-    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
-  },
-  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   },
   {
-    path: 'login',
+    path: '',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
 
