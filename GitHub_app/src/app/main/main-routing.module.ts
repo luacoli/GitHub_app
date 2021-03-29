@@ -10,28 +10,28 @@ const routes: Routes = [
     children: [
     {
       path: 'github',
-      loadChildren: () => import('./github/github.module').then( m => m.GithubPageModule)
+      loadChildren: () => import('../github/github.module').then( m => m.GithubPageModule)
     },
     {
       path: 'explorar',
-      loadChildren: () => import('./explorar/explorar.module').then( m => m.ExplorarPageModule)
+      loadChildren: () => import('../explorar/explorar.module').then( m => m.ExplorarPageModule)
   },
  {
      path: 'idealizadores',
-      loadChildren: () => import('./idealizadores/idealizadores.module').then( m => m.IdealizadoresPageModule)
+      loadChildren: () => import('../idealizadores/idealizadores.module').then( m => m.IdealizadoresPageModule)
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
   }
 
 
     ]
   },
-  
- 
 
-  
+
+
+
 ];
 
 

@@ -3,19 +3,33 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    loadChildren: () => import('./login/login.module').then(m => m.LoginPageModule)
+  },
+  {
     path: 'main',
-    loadChildren: () => import('./main/main.module').then( m => m.MainPageModule)
+    loadChildren: () => import('./main/main.module').then(m => m.MainPageModule)
   },
   {
     path: 'cadastro',
-    loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
+    loadChildren: () => import('./cadastro/cadastro.module').then(m => m.CadastroPageModule)
   },
   {
-    path: '',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    path: 'github',
+    loadChildren: () => import('./github/github.module').then(m => m.GithubPageModule)
+  },
+  {
+    path: 'explorar',
+    loadChildren: () => import('./explorar/explorar.module').then(m => m.ExplorarPageModule)
+  },
+  {
+    path: 'idealizadores',
+    loadChildren: () => import('./idealizadores/idealizadores.module').then(m => m.IdealizadoresPageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   }
-
-
 ];
 @NgModule({
   imports: [
@@ -23,4 +37,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
