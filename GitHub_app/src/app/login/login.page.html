@@ -1,0 +1,32 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <ion-item-group class="ion-margin-top ion-align-items-center">
+    <ion-img src="../../assets/images/user.png" class="login__image"></ion-img>
+    <h2 class="login__text">Bem-vindo de volta!</h2>
+  </ion-item-group>
+
+  <ion-item-group class="login__inputs">
+    <ion-label class="login__label" for="username">usuário:</ion-label>
+    <ion-input id="username" class="input__text" type="text" placeholder="Pedro"></ion-input>
+
+    <ion-label class="login__label" for="username">senha:</ion-label>
+    <ion-input id="username" class="input__text" type="password"></ion-input>
+
+    <ion-button class="button__fill">
+      <p routerLink="/home" color="dark">Login</p>
+    </ion-button>
+  </ion-item-group>
+
+  <ion-item-group class="login__to__register">
+    <h3>Novo por aqui?</h3>
+    <ion-button class="button__borded">
+      <p routerLink="/cadastro" class="link" color="dark">
+        Faça seu cadastro
+        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      </p>
+    </ion-button>
+  </ion-item-group>
+
+</ion-content>

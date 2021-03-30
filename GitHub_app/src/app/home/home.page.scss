@@ -1,0 +1,32 @@
+.home_itens {
+    display: block;
+    text-align: center;
+    font-family: "sans-serif", cursive;
+    color: white;
+    margin: 1rem auto;
+}
+
+.home_icons {
+
+    display: block;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#github_icon {
+    width: 235px;
+    height: 235px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.cursor{
+  cursor: pointer;
+}
