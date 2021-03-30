@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-icon name="arrow-back-outline" routerLink="/home" slot="start"></ion-icon>
+    <ion-title>criadores</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h2>{{titulo}}</h2>
+<ion-button color="warning" (click)="trocarTitulo('Lucas eh lindo')">Trocar titulos</ion-button>
+
+<ion-button color="success" (click)="gerarNumerosDe0a10()">Gerar numeros</ion-button>
+
+<ion-list *ngFor="let lista of listaNumeros">
+  <ion-item>
+    <ion-label>Numéro: {{lista}}</ion-label>
+  </ion-item>
+</ion-list>
+
+<ion-button color="danger" (click)="jogarCod()">Jogar Cod</ion-button>
+
+<h2>Vamo jogar um cod?</h2>
+<h2 *ngIf="tituloBoleano == false">Nao vamos</h2>
+<h2 *ngIf="tituloBoleano == true">Vamos</h2>
+
+</ion-content>
