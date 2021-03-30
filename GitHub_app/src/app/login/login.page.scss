@@ -6,21 +6,15 @@
   display: block;
   margin: 1rem auto;
   text-align: center;
-  font-family: "Rock Salt", cursive;
 }
 
 .login__inputs {
   margin: 3rem 3rem 1rem;
 
-  .login__label {
-    font-family: "Rock Salt", cursive;
-  }
-
   .input__text {
     border-radius: 8px;
     background: #ebe9e9;
     --padding-start: 1rem;
-    font-family: "Rock Salt", cursive;
   }
 
   .button__fill {
@@ -30,7 +24,6 @@
     text-align: center;
     justify-content: center;
     --background: #776e6e;
-    font-family: "Rock Salt", cursive;
   }
 }
 
@@ -39,19 +32,15 @@
   align-items: center;
   flex-direction: column;
 
-  h3 {
-    font-family: "Rock Salt", cursive;
-  }
   .button__borded {
     width: 18rem;
     color: black;
     border-radius: 8px;
     --background: #ebe9e9;
     border: 2px solid #776e6e;
-    font-family: "Rock Salt", cursive;
   }
 }
 
-p{
+p {
   cursor: pointer;
 }
