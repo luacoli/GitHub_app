@@ -8,3 +8,60 @@
   border-radius: 8px;
   padding: 0.6rem;
 }
+.login__image {
+  height: 8rem;
+}
+
+.login__text {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: "Rock Salt", cursive;
+}
+
+.login__inputs {
+  margin: 3rem 3rem 1rem;
+
+  .login__label {
+    font-family: "Rock Salt", cursive;
+  }
+
+  .input__text {
+    border-radius: 8px;
+    background: #ebe9e9;
+    --padding-start: 1rem;
+    font-family: "Rock Salt", cursive;
+  }
+
+  .button__fill {
+    width: 12rem;
+    display: flex;
+    margin: 1.6rem auto;
+    text-align: center;
+    justify-content: center;
+    --background: #776e6e;
+    font-family: "Rock Salt", cursive;
+  }
+}
+
+.login__to__register {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  h3 {
+    font-family: "Rock Salt", cursive;
+  }
+  .button__borded {
+    width: 18rem;
+    color: black;
+    border-radius: 8px;
+    --background: #ebe9e9;
+    border: 2px solid #776e6e;
+    font-family: "Rock Salt", cursive;
+  }
+}
+
+p{
+  cursor: pointer;
+}
