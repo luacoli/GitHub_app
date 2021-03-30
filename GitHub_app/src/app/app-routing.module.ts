@@ -25,10 +25,23 @@ const routes: Routes = [
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
-  },  {
+  },
+  {
     path: 'criadores',
     loadChildren: () => import('./criadores/criadores.module').then( m => m.CriadoresPageModule)
+  },  {
+    path: 'visualizar-commits',
+    loadChildren: () => import('./visualizar-commits/visualizar-commits.module').then( m => m.VisualizarCommitsPageModule)
+  },
+  {
+    path: 'visualizar-perfil',
+    loadChildren: () => import('./visualizar-perfil/visualizar-perfil.module').then( m => m.VisualizarPerfilPageModule)
+  },
+  {
+    path: 'visualizar-repositorios',
+    loadChildren: () => import('./visualizar-repositorios/visualizar-repositorios.module').then( m => m.VisualizarRepositoriosPageModule)
   }
+
 
 ];
 @NgModule({
