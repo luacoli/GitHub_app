@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { GithubPageRoutingModule } from './github-routing.module';
 
 import { GithubPage } from './github.page';
+import { HeaderComponent } from '../components/header/header.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { GithubPage } from './github.page';
     IonicModule,
     GithubPageRoutingModule
   ],
-  declarations: [GithubPage]
+  declarations: [GithubPage, HeaderComponent, FooterComponent]
 })
 export class GithubPageModule {}

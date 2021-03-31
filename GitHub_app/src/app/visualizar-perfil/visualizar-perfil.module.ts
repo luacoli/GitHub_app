@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { VisualizarPerfilPageRoutingModule } from './visualizar-perfil-routing.module';
 
 import { VisualizarPerfilPage } from './visualizar-perfil.page';
+import { HeaderComponent } from '../components/header/header.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { VisualizarPerfilPage } from './visualizar-perfil.page';
     IonicModule,
     VisualizarPerfilPageRoutingModule
   ],
-  declarations: [VisualizarPerfilPage]
+  declarations: [VisualizarPerfilPage, HeaderComponent, FooterComponent]
 })
 export class VisualizarPerfilPageModule {}
