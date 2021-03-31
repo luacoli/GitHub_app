@@ -1,14 +1,5 @@
-h1 {
-    position: absolute;
-    width: 78px;
-    height: 43px;
-    left: 199px;
-    top: 134px;
-    font-family: Rock Salt;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 43px;
+h1{
+  text-align: center;
 }
 
 #github_icon {
@@ -20,8 +11,9 @@ h1 {
     width: 40%;
 }
 
-ion-text {
-    text-align: center;
+p{
+    text-align: justify;
     font-family: cursive;
-    margin: 1rem auto;
+    padding:  15px;
+    margin: 0px;
 }

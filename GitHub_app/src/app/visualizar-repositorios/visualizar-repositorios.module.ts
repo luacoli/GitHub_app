@@ -7,6 +7,8 @@ import { IonicModule } from '@ionic/angular';
 import { VisualizarRepositoriosPageRoutingModule } from './visualizar-repositorios-routing.module';
 
 import { VisualizarRepositoriosPage } from './visualizar-repositorios.page';
+import { HeaderComponent } from '../components/header/header.component';
+import { FooterComponent } from '../components/footer/footer.component';
 
 @NgModule({
   imports: [
@@ -15,6 +17,6 @@ import { VisualizarRepositoriosPage } from './visualizar-repositorios.page';
     IonicModule,
     VisualizarRepositoriosPageRoutingModule
   ],
-  declarations: [VisualizarRepositoriosPage]
+  declarations: [VisualizarRepositoriosPage, HeaderComponent, FooterComponent]
 })
 export class VisualizarRepositoriosPageModule {}
