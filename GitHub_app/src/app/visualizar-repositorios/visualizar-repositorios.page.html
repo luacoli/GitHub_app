@@ -1,6 +1,45 @@
 <app-header></app-header>
-
 <ion-content>
+
+  <ion-icon name="arrow-back-circle-outline" routerLink="/visualizar-perfil" class="botao-voltar"></ion-icon>
+  <h1>Repositórios</h1>
+  <h2>Usuario 123</h2>
+
+  <br>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titulo-card">Repositório 1</ion-card-title>
+      <p><b class="titulo-paragrafo">Descrição:</b> Descrição do repositório 1</p>
+      <p><b class="titulo-paragrafo">Criado em:</b> 01/01/2009</p>
+      <p><b class="titulo-paragrafo">Pushed em:</b> 07/09/2011</p>
+      <p routerLink="/visualizar-commits" class="botao-commits">
+        Veja meus commits <ion-icon name="arrow-forward-outline"></ion-icon>
+      </p>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titulo-card">Repositório 2</ion-card-title>
+      <p><b class="titulo-paragrafo">Descrição:</b> Descrição do repositório 2</p>
+      <p><b class="titulo-paragrafo">Criado em:</b> 02/02/2012</p>
+      <p><b class="titulo-paragrafo">Pushed em:</b> 06/01/2015</p>
+      <p routerLink="/visualizar-commits" class="botao-commits">
+        Veja meus commits <ion-icon name="arrow-forward-outline"></ion-icon>
+      </p>
+    </ion-card-header>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="titulo-card">Repositório 3</ion-card-title>
+      <p><b class="titulo-paragrafo">Descrição:</b> Descrição do repositório 3</p>
+      <p><b class="titulo-paragrafo">Criado em:</b> 03/04/2017</p>
+      <p><b class="titulo-paragrafo">Pushed em:</b> 02/01/2018</p>
+      <p routerLink="/visualizar-commits" class="botao-commits">
+        Veja meus commits <ion-icon name="arrow-forward-outline"></ion-icon>
+      </p>
+    </ion-card-header>
+  </ion-card>
 
 </ion-content>
 <app-footer></app-footer>
