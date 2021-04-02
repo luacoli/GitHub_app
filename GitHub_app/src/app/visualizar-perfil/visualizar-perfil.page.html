@@ -1,33 +1,51 @@
 <app-header></app-header>
 
 <ion-content>
+    <ion-text id="usuario_nome">Luana2813</ion-text>
 
-    <div>
-        <ion-text>Luana2813</ion-text>
+    <ion-avatar>
+        <img src="https://thispersondoesnotexist.com/image">
+    </ion-avatar>
 
-        <ion-avatar>
-            <img src="https://thispersondoesnotexist.com/image">
-        </ion-avatar>
+    <div class="container">
+        <ion-grid>
+
+            <ion-row>
+                <ion-text>Local:</ion-text>
+
+            </ion-row>
+            <ion-row>
+                <ion-text>Repositórios:</ion-text>
+                <!-- <ion-col> -->
+                <ion-button color="light">
+                    <p>Acessar</p>
+                    <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+                </ion-button>
+                <!-- </ion-col> -->
+
+
+            </ion-row>
+            <ion-row>
+                <ion-text>Seguidores:</ion-text>
+
+            </ion-row>
+            <ion-row>
+                <ion-text>Seguindo:</ion-text>
+
+            </ion-row>
+            <ion-row>
+                <ion-text>Biografia:</ion-text>
+            </ion-row>
+
+        </ion-grid>
+
     </div>
-
-    <div>
-
-        <p>Local:</p>
-        <p>Repositórios:</p>
-        <p>Seguidores:</p>
-        <p>Seguindo:</p>
-        <p>Biografia:</p>
-
+    <div class="button">
+        <ion-button color="dark" id="button_visitar">
+            <ion-icon slot="end" name="logo-github"></ion-icon>
+            <p>visitar perfil no</p>
+        </ion-button>
     </div>
-
-    <ion-button>Veja meus repositórios:</ion-button>
-
-
-    <ion-button>visitar perfil no
-        <ion-icon name="logo-github"></ion-icon>
-    </ion-button>
-
-
-
 </ion-content>
+
 <app-footer></app-footer>

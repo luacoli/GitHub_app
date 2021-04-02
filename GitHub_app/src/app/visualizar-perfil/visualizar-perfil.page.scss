@@ -1,12 +1,57 @@
 p {
-    text-align: center;
+    font-size: 10px;
 }
 
 ion-avatar {
-    width: 210px;
-    height: 210px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
     display: block;
     margin-right: auto;
     margin-left: auto;
     margin-top: 10px;
+}
+
+ion-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#button_visitar {
+    //margin-left: 50px;
+    //width: 250px;
+    //height: 25px;
+    //padding: 0;
+    margin: 0 auto;
+}
+
+.button {
+    //display: block;
+    // margin: 1rem auto;
+    //text-align: center;
+    margin-left: 30%;
+}
+
+#usuario_nome {
+    display: block;
+    margin: 1rem auto;
+    text-align: center; //     display: block;
+    //     margin-top: 10px;
+}
+
+.container {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // 
+    //margin: 0 auto;
+    //width: 50%;
+    // margin-left: 15%;
+    // margin-right: 15%;
+    // margin-bottom: 15%;
+    margin: 10%;
+}
+
+.usuario {
+    margin: 50px;
 }
