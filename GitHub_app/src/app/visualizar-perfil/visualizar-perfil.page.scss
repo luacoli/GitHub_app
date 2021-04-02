@@ -17,41 +17,30 @@ ion-text {
     margin-top: 10px;
 }
 
-#button_visitar {
-    //margin-left: 50px;
-    //width: 250px;
-    //height: 25px;
-    //padding: 0;
-    margin: 0 auto;
-}
-
-.button {
-    //display: block;
-    // margin: 1rem auto;
-    //text-align: center;
-    margin-left: 30%;
-}
-
-#usuario_nome {
-    display: block;
-    margin: 1rem auto;
-    text-align: center; //     display: block;
-    //     margin-top: 10px;
-}
-
 .container {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // 
-    //margin: 0 auto;
-    //width: 50%;
-    // margin-left: 15%;
-    // margin-right: 15%;
-    // margin-bottom: 15%;
     margin: 10%;
 }
 
-.usuario {
-    margin: 50px;
+.button_visitar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#usuario {
+    display: block;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+#button_acessar {
+    margin-left: 30px;
+}
+
+#button_visitar {
+    width: 18rem;
+    color: black;
+    border-radius: 8px;
+    --background: #ebe9e9;
+    border: 2px solid #776e6e;
 }
