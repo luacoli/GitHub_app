@@ -40,3 +40,23 @@
   border-radius: 8px;
   padding: 0.6rem;
 }
+
+.regular-text {
+  color: #776E6E
+}
+
+.button-borded {
+  width: 18rem;
+  color: #776E6E;
+  font-size: 0.6rem;
+  border-radius: 8px;
+  --background: #E5E5E5;
+  border: 2px solid #776E6E;
+}
+
+.button-fill {
+  font-size: 0.6rem;
+  color: black;
+  border-radius: 8px;
+  --background: #776E6E;
+}

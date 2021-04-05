@@ -1,29 +1,36 @@
-.botao-voltar{
+.botao-voltar {
   position: absolute;
   top: 25px;
   left: 20px;
+  cursor: pointer;
   font-size: 30px;
 }
-h1{
-text-align: center;
+
+h1 {
+  text-align: center;
 }
-h2{
-text-align: center;
-font-size: 15px;
+
+h2 {
+  text-align: center;
+  font-size: 15px;
+  margin: 3rem 0;
 }
-.titulo-card{
-text-align: center;
-color: black;
-}
-.botao-commits{
-text-align: center;
-background-color: #D1CCC0;
-border: solid black 1px;
-color: black;
-}
-ion-card{
-  background-color: #EBE9E9;
-}
-.titulo-paragrafo{
+
+.titulo-card {
+  text-align: center;
   color: black;
+}
+
+ion-card {
+  background-color: #ebe9e9;
+}
+
+.titulo-paragrafo {
+  color: black;
+}
+
+.button-fill {
+  width: 15rem;
+  display: flex;
+  margin: 0 auto;
 }
