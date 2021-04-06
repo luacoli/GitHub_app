@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./idealizadores.page.scss'],
 })
 export class IdealizadoresPage implements OnInit {
+  digital: any;
 
   constructor() { }
 
