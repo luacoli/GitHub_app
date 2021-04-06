@@ -1,6 +1,32 @@
 <app-header></app-header>
 
 <ion-content>
+  <ion-label class="search__label" for="user">
+    pesquise por um usuário:
+  </ion-label>
+  <ion-searchbar
+    animated
+    placeholder="João"
+    id="user"
+    class="searchbar"
+  ></ion-searchbar>
 
+  <ion-card class="recent-searched">
+    <ion-card-content>
+      <ion-item href="visualizar-perfil" class="recent-searched__item">
+        <ion-text>usuario123</ion-text>
+        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-item>
+      <ion-item href="visualizar-perfil" class="recent-searched__item">
+        <ion-text>usuario456</ion-text>
+        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-item>
+      <ion-item href="visualizar-perfil" class="recent-searched__item">
+        <ion-text>usuario789</ion-text>
+        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+
 <app-footer></app-footer>
