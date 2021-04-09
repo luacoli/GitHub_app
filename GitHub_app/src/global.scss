@@ -16,7 +16,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
@@ -25,15 +25,15 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-/* Import font */ 
-@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
 
 :root {
   /* Set the background of the entire app */
-  --ion-background-color: #D1CCC0;
+  --ion-background-color: #d1ccc0;
 
   /* Set the font family of the entire app */
-  --ion-font-family: 'Rock Salt', cursive;
+  --ion-font-family: "Rock Salt", cursive;
 }
 
 .input__text {
@@ -42,21 +42,24 @@
 }
 
 .regular-text {
-  color: #776E6E
+  color: #776e6e;
 }
 
 .button-borded {
   width: 18rem;
-  color: #776E6E;
+  color: #776e6e;
   font-size: 0.6rem;
   border-radius: 8px;
-  --background: #E5E5E5;
-  border: 2px solid #776E6E;
+  --background: #e5e5e5;
+  border: 2px solid #776e6e;
 }
 
 .button-fill {
-  font-size: 0.6rem;
+  width: 15rem;
+  display: flex;
   color: black;
+  margin: 0 auto;
   border-radius: 8px;
-  --background: #776E6E;
+  font-size: 0.6rem;
+  --background: #776e6e;
 }
