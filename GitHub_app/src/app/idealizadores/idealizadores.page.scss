@@ -1,8 +1,10 @@
 ion-content {
-  --background:#E5E5E5;
+  --background: #E5E5E5;
 }
 
-
+ion-card-header, ion-avatar, ion-label, ion-item{
+  --background: #EBE9E9;
+}
 ion-label{
   align-items: center;
 }
