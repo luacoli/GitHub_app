@@ -1,15 +1,16 @@
-ion-content {
-  --background: #E5E5E5;
+ion-card,
+ion-card-header,
+ion-item,
+ion-label,
+.item-native {
+  background-color: #ebe9e9;
 }
 
-ion-card-header, ion-avatar, ion-label, ion-item{
-  --background: #EBE9E9;
-}
-ion-label{
+ion-label {
   align-items: center;
 }
 
-ion-button{
+ion-button {
   display: flex;
   justify-content: center;
 }
