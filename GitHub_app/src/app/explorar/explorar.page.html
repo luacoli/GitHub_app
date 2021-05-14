@@ -24,16 +24,8 @@
   <ion-text class="recent-searched__title">últimos pesquisados:</ion-text>
   <ion-card class="recent-searched">
     <ion-card-content>
-      <ion-item href="visualizar-perfil" class="recent-searched__item">
-        <ion-text>usuario123</ion-text>
-        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
-      </ion-item>
-      <ion-item href="visualizar-perfil" class="recent-searched__item">
-        <ion-text>usuario456</ion-text>
-        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
-      </ion-item>
-      <ion-item href="visualizar-perfil" class="recent-searched__item">
-        <ion-text>usuario789</ion-text>
+      <ion-item *ngFor="let user of users" [routerLink]="['visualizar-perfil', user.login]" class="recent-searched__item">
+        <ion-text>{{ user.login }}</ion-text>
         <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
       </ion-item>
     </ion-card-content>

@@ -1,6 +1,6 @@
 export interface JsonPerfil{
      login: string,
-     id: number,
+     id: string,
      avatar_url: string,
      url: string,
      html_url: string,
