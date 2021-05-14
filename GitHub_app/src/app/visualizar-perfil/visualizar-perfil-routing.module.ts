@@ -1,11 +1,11 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
 import { VisualizarPerfilPage } from './visualizar-perfil.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':id',
     component: VisualizarPerfilPage
   }
 ];
