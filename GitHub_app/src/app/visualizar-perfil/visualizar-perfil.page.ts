@@ -12,7 +12,6 @@ import { JsonPerfil} from '../models/JsonPerfil';
 export class VisualizarPerfilPage implements OnInit {
   public jsonGit: JsonPerfil;
 
-
   constructor(
     private route: ActivatedRoute,
     private service: ServicesService
@@ -22,7 +21,7 @@ export class VisualizarPerfilPage implements OnInit {
 
    private async getData(){
     const id = this.route.snapshot.paramMap.get('id')
-    this.jsonGit = await this.service.getUserData(id);
+    this.jsonGit = await this.service.getUser(id);
    }
 
   

@@ -4,7 +4,7 @@
     <ion-item-group class="ion-margin-top ion-align-items-center">
         <h2 id="usuario">{{jsonGit.login}}</h2>
         <ion-avatar>
-            <img [src]="jsonGit.avatar_url">
+            <img src="jsonGit.avatar_url">
         </ion-avatar>
     </ion-item-group>
 
@@ -38,8 +38,8 @@
             </ion-row>
             <ion-row>
                 <ion-text>Biografia:
-                    <ion-text class="regular-text">{{jsonGit.Biografia}}</ion-text>
-                    <ion-text class="regular-text" *ngIf="jsonGit.Biografia == null">Desconhecido</ion-text>
+                    <ion-text class="regular-text">{{jsonGit.bio}}</ion-text>
+                    <ion-text class="regular-text" *ngIf="jsonGit.bio == null">Desconhecido</ion-text>
                 </ion-text>
             </ion-row>
         </ion-grid>

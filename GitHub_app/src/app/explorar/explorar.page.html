@@ -1,16 +1,27 @@
 <app-header></app-header>
 
 <ion-content>
-  <ion-label class="search__label" for="user">
-    pesquise por um usuário:
-  </ion-label>
-  <ion-searchbar
-    animated
-    placeholder="João"
-    id="user"
-    class="searchbar"
-  ></ion-searchbar>
+  <ion-item-group>
+    <ion-label class="search__label" for="user">
+      pesquise por um login:
+    </ion-label>
+    <ion-searchbar
+      animated
+      placeholder="joao_pedro"
+      id="user"
+      class="searchbar"
+      inputmode="search"
+      enterkeyhint="enter"
+      [(ngModel)]="username"
+      (ionChange)="searchUser()"
+    ></ion-searchbar>
 
+    <ion-button class="button__fill search-button">
+      <p routerLink="/visualizar-perfil/" color="dark">pesquisar</p>
+    </ion-button>
+  </ion-item-group>
+
+  <ion-text class="recent-searched__title">últimos pesquisados:</ion-text>
   <ion-card class="recent-searched">
     <ion-card-content>
       <ion-item href="visualizar-perfil" class="recent-searched__item">
