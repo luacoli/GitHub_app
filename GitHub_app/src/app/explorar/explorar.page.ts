@@ -12,13 +12,15 @@ import { StorageService } from '../services/storage.service';
 export class ExplorarPage implements OnInit {
   public username = '';
  //public jsonGit: JsonPerfil;
-  public users: Users[] = []
-  public user: Users[] = [];
+  public users: Users[] = [];
+  public usernames: Users[] = [];
+  public usernamesRecent= this.storage.allUsers();
+  
 
   constructor(
     // private route: ActivatedRoute,
     private service: ServicesService,
-    // private storage: StorageService
+     private storage: StorageService
   ) {
   }
   
@@ -29,9 +31,14 @@ export class ExplorarPage implements OnInit {
   }
 
   private async getUser() {
+   this.storage.addRecentUser(this.username as any);
    // this.user = await this.service.getUser(this.username);
   }
   
+ 
+
+  
+ 
   
 
   ngOnInit() {}

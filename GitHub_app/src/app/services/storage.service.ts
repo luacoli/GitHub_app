@@ -2,24 +2,23 @@ import { Injectable } from '@angular/core';
 import { Storage } from '@ionic/storage'
 import { Users } from '../models/gitUsers';
 
-/*type User = {
+type Usernames = {
   id: number;
   login: string;
-};*/
+};
 
 @Injectable({
   providedIn: 'root',
 })
 export class StorageService {
-  private users: Users[] = [];
+  private usernames: Usernames[] = [];
+
   constructor(private storage: Storage) {
     // this.storage.get('users').then((user) => {
     //   this.users.push(...user);
     // });
-    //this.loadFromStorage();
-    this.storage.get("users").then((val) => { 
-      this.users.push(...val);
-    });
+   // this.loadFromStorage();
+  
   }
 
  
@@ -31,14 +30,15 @@ export class StorageService {
     }
   }*/
   
-  /*public allUsers(): Readonly<User>[] {
-    return this.users;
-  }*/
+  public allUsers(): Readonly<Usernames>[] {
+    return this.usernames;
+  }
 
-  public addRecentUser(user: Users) {
-    // const maxId = Math.max(0, ...this.users.map((u) => u.id));
-     //user.id + 1;
-    this.users.push({ ...user });
-    this.storage.set('users', this.users);
+  public addRecentUser(user: Usernames) {
+    //const maxId = Math.max(0, ...this.usernames.map(s => s.id));
+    //user.id = maxId + 1;
+    this.usernames.push({...user});
+
+    this.storage.set('usernames', this.usernames);
   }
 }
