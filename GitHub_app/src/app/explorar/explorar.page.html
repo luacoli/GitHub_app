@@ -1,35 +1,39 @@
 <app-header></app-header>
 
 <ion-content>
-  <ion-item-group>
-    <ion-label class="search__label" for="user">
-      pesquise por um login:
-    </ion-label>
-    <ion-searchbar
-      animated
-      placeholder="joao_pedro"
-      id="user"
-      class="searchbar"
-      inputmode="search"
-      enterkeyhint="enter"
-      [(ngModel)]="username"
-      (ionChange)="searchUser()"
-    ></ion-searchbar>
+    <ion-item-group>
+        <!-- <ion-label class="search__label" for="users">
+            pesquise por um login:
+        </ion-label>-->
+        <ion-text>pesquise por um login:</ion-text>
+        <!-- <ion-searchbar [(ngModel)]="username" (ionChange)="searchUser()" placeholder="joao_pedro"></ion-searchbar> -->
+        <ion-searchbar [(ngModel)]="username" placeholder="joao_pedro"></ion-searchbar>
+        <ion-button class="button__fill search-button" [routerLink]="['/visualizar-perfil/', username]">pesquisar</ion-button>
+        <!-- <p [routerLink]="['/visualizar-perfil/', jsonGit.login]" color="dark">pesquisar</p> -->
+        <!--</ion-button>-->
+        <!-- <ion-button class="button__fill search-button" [routerLink]="['/visualizar-perfil', username]"></ion-button> -->
+    </ion-item-group>
 
-    <ion-button class="button__fill search-button">
-      <p routerLink="/visualizar-perfil/" color="dark">pesquisar</p>
-    </ion-button>
-  </ion-item-group>
+    <!--<ion-content class="ion-padding">-->
+    <!-- <ion-list>
+            <ion-item *ngFor="let users of users">
+                <ion-label>
+                    <p>{{users.login}}</p>
+                </ion-label>
+            </ion-item>
+        </ion-list> -->
+    <!-- <ion-text class="recent-searched__title">últimos pesquisados:</ion-text>
+    <ion-card class="recent-searched">
+        <ion-card-content>
+            <ion-item *ngFor="let Users of Users" [routerLink]="['visualizar-perfil', Users.login]" class="recent-searched__item">
+                <ion-text>{{ user.login }}</ion-text>
+                <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+            </ion-item>
+        </ion-card-content>
+    </ion-card> -->
 
-  <ion-text class="recent-searched__title">últimos pesquisados:</ion-text>
-  <ion-card class="recent-searched">
-    <ion-card-content>
-      <ion-item *ngFor="let user of users" [routerLink]="['visualizar-perfil', user.login]" class="recent-searched__item">
-        <ion-text>{{ user.login }}</ion-text>
-        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
-      </ion-item>
-    </ion-card-content>
-  </ion-card>
 </ion-content>
 
+
+<!-- animated id="user" class="searchbar" inputmode="search" enterkeyhint="enter" -->
 <app-footer></app-footer>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Users } from '../models/gitUsers';
 import { ServicesService } from '../services/services.service';
-import { JsonPerfil } from '../models/JsonPerfil';
 import { StorageService } from '../services/storage.service';
 
 @Component({
@@ -10,8 +10,10 @@ import { StorageService } from '../services/storage.service';
   styleUrls: ['./explorar.page.scss'],
 })
 export class ExplorarPage implements OnInit {
-  public username;
-  public jsonGit: JsonPerfil;
+  public username = '';
+ //public jsonGit: JsonPerfil;
+  public users: Users[] = []
+  public user: Users[] = [];
 
   constructor(
     // private route: ActivatedRoute,
@@ -21,16 +23,16 @@ export class ExplorarPage implements OnInit {
   }
   
   // public users = this.storage.allUsers();
-
-  private async getData(username) {
-    this.jsonGit = await this.service.getUser(username);
-  }
-  
   public async searchUser() {
-    this.getData(this.username);
-
+    this.users = await this.service.getUsers(this.username);
     // this.storage.addRecentUser(this.username);
   }
+
+  private async getUser() {
+   // this.user = await this.service.getUser(this.username);
+  }
+  
+  
 
   ngOnInit() {}
 }

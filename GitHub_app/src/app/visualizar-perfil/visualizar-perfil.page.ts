@@ -1,7 +1,8 @@
 import { Component, ModuleWithProviders, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Users } from '../models/gitUsers';
 import { ServicesService } from '../services/services.service';
-import { JsonPerfil} from '../models/JsonPerfil';
+//import { JsonPerfil} from '../models/gitUsers';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { JsonPerfil} from '../models/JsonPerfil';
   styleUrls: ['./visualizar-perfil.page.scss'],
 })
 export class VisualizarPerfilPage implements OnInit {
-  public jsonGit: JsonPerfil;
+  public user: Users;
 
   constructor(
     private route: ActivatedRoute,
@@ -21,11 +22,8 @@ export class VisualizarPerfilPage implements OnInit {
 
    private async getData(){
     const id = this.route.snapshot.paramMap.get('id')
-    this.jsonGit = await this.service.getUser(id);
+    this.user = await this.service.getUser(id);
    }
-
-  
-   
 
   ngOnInit() {
   }

@@ -1,4 +1,8 @@
-export interface JsonPerfil{
+export interface UserSearchResult {
+     users: Users[];
+ }
+
+export interface Users{
      login: string,
      id: string,
      avatar_url: string,

@@ -1,10 +1,10 @@
 <app-header></app-header>
 
-<ion-content>
+<ion-content *ngIf="user">
     <ion-item-group class="ion-margin-top ion-align-items-center">
-        <h2 id="usuario">{{jsonGit.login}}</h2>
+        <h2 id="usuario">{{user.login}}</h2>
         <ion-avatar>
-            <img src="jsonGit.avatar_url">
+            <img [src]="user.avatar_url">
         </ion-avatar>
     </ion-item-group>
 
@@ -12,14 +12,13 @@
         <ion-grid>
             <ion-row>
                 <ion-text>Local:
-                    <ion-text class="regular-text">{{jsonGit.location}}</ion-text>
-                    <ion-text class="regular-text" *ngIf="jsonGit.location == null">Desconhecido</ion-text>
-
+                    <ion-text class="regular-text">{{user.location}}</ion-text>
+                    <ion-text class="regular-text" *ngIf="user.location == null">Desconhecido</ion-text>
                 </ion-text>
             </ion-row>
             <ion-row>
                 <ion-text>Repositórios:
-                    <ion-text class="regular-text">{{jsonGit.public_repos}}</ion-text>
+                    <ion-text class="regular-text">{{user.public_repos}}</ion-text>
                 </ion-text>
                 <ion-button href="visualizar-repositorios" class="button-fill">
                     <p>Veja meus repos</p>
@@ -28,18 +27,18 @@
             </ion-row>
             <ion-row>
                 <ion-text>Seguidores:
-                    <ion-text class="regular-text">{{jsonGit.followers}}</ion-text>
+                    <ion-text class="regular-text">{{user.followers}}</ion-text>
                 </ion-text>
             </ion-row>
             <ion-row>
                 <ion-text>Seguindo:
-                    <ion-text class="regular-text">{{jsonGit.following}}</ion-text>
+                    <ion-text class="regular-text">{{user.following}}</ion-text>
                 </ion-text>
             </ion-row>
             <ion-row>
                 <ion-text>Biografia:
-                    <ion-text class="regular-text">{{jsonGit.bio}}</ion-text>
-                    <ion-text class="regular-text" *ngIf="jsonGit.bio == null">Desconhecido</ion-text>
+                    <ion-text class="regular-text">{{user.bio}}</ion-text>
+                    <ion-text class="regular-text" *ngIf="user.bio == null">Desconhecido</ion-text>
                 </ion-text>
             </ion-row>
         </ion-grid>
