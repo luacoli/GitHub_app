@@ -17,21 +17,23 @@ export class StorageService {
     // this.storage.get('users').then((user) => {
     //   this.users.push(...user);
     // });
-   // this.loadFromStorage();
+    this.storage.create();
+    this.loadFromStorage();
   
   }
 
  
-  /*private async loadFromStorage() {
-    const storedUsers = await this.storage.get('users');
+  private async loadFromStorage() {
+    const storedUsers = await this.storage.get('usernames');
  
     if (storedUsers) {
-      this.users.push(...storedUsers);
+      this.usernames.push(...storedUsers);
     }
-  }*/
+  }
   
-  public allUsers(): Readonly<Usernames>[] {
-    return this.usernames;
+  // public aync allUsers(): Readonly<Usernames>[] {
+    public allUsers() {
+    return  this.usernames;
   }
 
   public addRecentUser(user: Usernames) {

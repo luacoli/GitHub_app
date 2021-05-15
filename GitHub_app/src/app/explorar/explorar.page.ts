@@ -14,7 +14,8 @@ export class ExplorarPage implements OnInit {
  //public jsonGit: JsonPerfil;
   public users: Users[] = [];
   public usernames: Users[] = [];
-  public usernamesRecent= this.storage.allUsers();
+  public usernamesRecent = this.storage.allUsers();
+
   
 
   constructor(
@@ -30,7 +31,7 @@ export class ExplorarPage implements OnInit {
     // this.storage.addRecentUser(this.username);
   }
 
-  private async getUser() {
+  public async getUser() {
    this.storage.addRecentUser(this.username as any);
    // this.user = await this.service.getUser(this.username);
   }
