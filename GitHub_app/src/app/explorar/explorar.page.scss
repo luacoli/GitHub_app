@@ -1,5 +1,6 @@
-.search__label, .recent-searched__title {
-  margin: 2rem;
+.search__label,
+.recent-searched__title {
+  margin-left: 1rem;
 }
 
 .searchbar {
@@ -8,6 +9,15 @@
   max-width: 90%;
 }
 
-.recent-searched {
-  margin-left: 2rem;
+.search-button {
+  display: block;
+  max-width: 22rem;
+  color: black;
+  margin: 1rem auto;
+  font-size: 0.6rem;
+  --background: #776e6e;
+}
+
+.recent-user__button {
+  --background: transparent;
 }

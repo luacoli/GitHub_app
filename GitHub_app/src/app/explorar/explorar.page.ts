@@ -36,11 +36,5 @@ export class ExplorarPage implements OnInit {
    // this.user = await this.service.getUser(this.username);
   }
   
- 
-
-  
- 
-  
-
   ngOnInit() {}
 }
