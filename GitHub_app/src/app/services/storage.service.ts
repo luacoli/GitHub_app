@@ -39,8 +39,10 @@ export class StorageService {
   public addRecentUser(user: Usernames) {
     //const maxId = Math.max(0, ...this.usernames.map(s => s.id));
     //user.id = maxId + 1;
-    this.usernames.push({...user});
+    console.log(user);
+    this.usernames.push(user);
+    this.storage.set('usernames', this.usernames.reverse());
+    console.log(this.usernames);
 
-    this.storage.set('usernames', this.usernames);
   }
 }

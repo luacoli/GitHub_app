@@ -10,7 +10,7 @@ import { StorageService } from '../services/storage.service';
   styleUrls: ['./explorar.page.scss'],
 })
 export class ExplorarPage implements OnInit {
-  public username = '';
+  public username;
  //public jsonGit: JsonPerfil;
   public users: Users[] = [];
   public usernames: Users[] = [];
@@ -32,7 +32,7 @@ export class ExplorarPage implements OnInit {
   }
 
   public async getUser() {
-   this.storage.addRecentUser(this.username as any);
+   this.storage.addRecentUser(this.username);
    // this.user = await this.service.getUser(this.username);
   }
   
