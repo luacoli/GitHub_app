@@ -29,7 +29,8 @@ const routes: Routes = [
   {
     path: 'criadores',
     loadChildren: () => import('./criadores/criadores.module').then( m => m.CriadoresPageModule)
-  },  {
+  },
+  {
     path: 'visualizar-commits',
     loadChildren: () => import('./visualizar-commits/visualizar-commits.module').then( m => m.VisualizarCommitsPageModule)
   },
