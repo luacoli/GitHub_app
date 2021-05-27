@@ -1,4 +1,7 @@
 <app-header></app-header>
+<script>
+    var link = user.login;
+</script>
 
 <ion-content *ngIf="user">
     <ion-item-group class="ion-margin-top ion-align-items-center">
@@ -45,8 +48,8 @@
     </ion-item-group>
 
     <ion-item-group class="button-container">
-        <ion-button class="button-borded">
-            <ion-icon slot="end" name="logo-github" (click)="visitarPerfil()"></ion-icon>
+        <ion-button class="button-borded" ng-href="https://github.com/{{user.login}}">
+            <ion-icon slot="end" name="logo-github"></ion-icon>
             <p>visitar perfil no</p>
         </ion-button>
     </ion-item-group>
