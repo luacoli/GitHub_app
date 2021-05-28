@@ -18,7 +18,7 @@ export class ServicesService {
   async getUser(user: string) {
     const url = `https://api.github.com/users/${user}`;
     const result = (await this.http.get(url).toPromise()) as Users;
-    console.log(result);
+
     return result;
   }
 
@@ -29,8 +29,8 @@ export class ServicesService {
     return result;
   }
 
-  async getCommits(user: string, repos: string) {
-    const url = `https://api.github.com/users/${user}/${repos}/commits`;
+  async getCommits(user: string, repo: string) {
+    const url = `https://api.github.com/repos/${user}/${repo}/commits`;
     const result = await this.http.get(url).toPromise();
 
     return result;

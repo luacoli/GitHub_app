@@ -2,7 +2,7 @@
 <ion-content>
   <ion-icon
     name="arrow-back-circle-outline"
-    routerLink="/visualizar-perfil"
+    [routerLink]="['/visualizar-perfil/', login]"
     class="botao-voltar"
   ></ion-icon>
   <h1>Repositórios</h1>
@@ -17,7 +17,7 @@
       </p>
       <p><b class="titulo-paragrafo">Criado em:</b> {{(repo.created_at)}}</p>
       <p><b class="titulo-paragrafo">Pushed em:</b> {{repo.pushed_at}}</p>
-      <ion-button routerLink="/visualizar-commits" class="button-fill">
+      <ion-button [routerLink]="['/', 'visualizar-commits', login, repo.name]" class="button-fill">
         Veja meus commits
         <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
       </ion-button>

@@ -4,7 +4,7 @@ import { VisualizarCommitsPage } from './visualizar-commits.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':id/:repo',
     component: VisualizarCommitsPage
   }
 ];

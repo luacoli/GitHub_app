@@ -1,25 +1,34 @@
 <app-header></app-header>
 
 <ion-content>
-    <ion-item-group>
-        <ion-label class="search__label">
-            pesquise por um login:
-        </ion-label>
-        <ion-searchbar [(ngModel)]="username" placeholder="joao_pedro"></ion-searchbar>
-        <ion-button class="button__fill search-button" (click)="getUser()" [routerLink]="['/visualizar-perfil/', username]">
-            <ion-text>pesquisar</ion-text>
-        </ion-button>
-    </ion-item-group>
+  <ion-item-group>
+    <ion-label class="search__label"> pesquise por um login: </ion-label>
+    <ion-searchbar
+      [(ngModel)]="username"
+      placeholder="joao_pedro"
+    ></ion-searchbar>
+    <ion-button
+      class="button__fill search-button"
+      (click)="getUser()"
+      [routerLink]="['/visualizar-perfil/', username]"
+    >
+      <ion-text>pesquisar</ion-text>
+    </ion-button>
+  </ion-item-group>
 
-    <ion-text class="recent-searched__title">últimos pesquisados:</ion-text>
-    <ion-card class="recent-searched">
-        <ion-card-content>
-            <ion-item *ngFor="let username of usernamesRecent" class="recent-searched__item" [routerLink]="['/visualizar-perfil/', username]">
-                <ion-text>{{username}}</ion-text>
-                <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
-            </ion-item>
-        </ion-card-content>
-    </ion-card>
+  <ion-text class="recent-searched__title">últimos pesquisados:</ion-text>
+  <ion-card class="recent-searched">
+    <ion-card-content>
+      <ion-item
+        *ngFor="let username of usernamesRecent"
+        class="recent-searched__item"
+        [routerLink]="['/visualizar-perfil/', username]"
+      >
+        <ion-text>{{username}}</ion-text>
+        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
 
 <app-footer></app-footer>
