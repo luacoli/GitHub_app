@@ -12,7 +12,7 @@ import { ServicesService } from '../services/services.service';
 })
 export class VisualizarPerfilPage implements OnInit {
   public user: Users;
-  urlGit: string = "https://github.com/";
+  // urlGit: string = "https://github.com/";
 
   constructor(
     private route: ActivatedRoute,

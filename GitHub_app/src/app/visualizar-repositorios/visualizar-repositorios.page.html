@@ -6,44 +6,17 @@
     class="botao-voltar"
   ></ion-icon>
   <h1>Repositórios</h1>
-  <h2>Usuario 123</h2>
+  <h2>{{login}}</h2>
 
-  <ion-card>
+  <ion-card *ngFor="let repo of repos" class="card">
     <ion-card-header>
-      <ion-card-title class="titulo-card">Repositório 1</ion-card-title>
+      <ion-card-title class="titulo-card">{{repo.name}}</ion-card-title>
       <p>
-        <b class="titulo-paragrafo">Descrição:</b> Descrição do repositório 1
+        <b class="titulo-paragrafo">Descrição:</b>
+        {{repo.description ? repo.description : 'Sem descrição'}}
       </p>
-      <p><b class="titulo-paragrafo">Criado em:</b> 01/01/2009</p>
-      <p><b class="titulo-paragrafo">Pushed em:</b> 07/09/2011</p>
-      <ion-button routerLink="/visualizar-commits" class="button-fill">
-        Veja meus commits
-        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
-      </ion-button>
-    </ion-card-header>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title class="titulo-card">Repositório 2</ion-card-title>
-      <p>
-        <b class="titulo-paragrafo">Descrição:</b> Descrição do repositório 2
-      </p>
-      <p><b class="titulo-paragrafo">Criado em:</b> 02/02/2012</p>
-      <p><b class="titulo-paragrafo">Pushed em:</b> 06/01/2015</p>
-      <ion-button routerLink="/visualizar-commits" class="button-fill">
-        Veja meus commits
-        <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
-      </ion-button>
-    </ion-card-header>
-  </ion-card>
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title class="titulo-card">Repositório 3</ion-card-title>
-      <p>
-        <b class="titulo-paragrafo">Descrição:</b> Descrição do repositório 3
-      </p>
-      <p><b class="titulo-paragrafo">Criado em:</b> 03/04/2017</p>
-      <p><b class="titulo-paragrafo">Pushed em:</b> 02/01/2018</p>
+      <p><b class="titulo-paragrafo">Criado em:</b> {{(repo.created_at)}}</p>
+      <p><b class="titulo-paragrafo">Pushed em:</b> {{repo.pushed_at}}</p>
       <ion-button routerLink="/visualizar-commits" class="button-fill">
         Veja meus commits
         <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>

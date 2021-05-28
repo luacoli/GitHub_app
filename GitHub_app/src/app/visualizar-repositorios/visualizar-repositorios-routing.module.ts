@@ -5,7 +5,7 @@ import { VisualizarRepositoriosPage } from './visualizar-repositorios.page';
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':id',
     component: VisualizarRepositoriosPage
   }
 ];

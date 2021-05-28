@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Users } from '../models/gitUsers';
 import { ServicesService } from '../services/services.service';
 import { StorageService } from '../services/storage.service';
@@ -11,7 +10,6 @@ import { StorageService } from '../services/storage.service';
 })
 export class ExplorarPage implements OnInit {
   public username;
- //public jsonGit: JsonPerfil;
   public users: Users[] = [];
   public usernames: Users[] = [];
   public usernamesRecent = this.storage.allUsers();
@@ -19,21 +17,17 @@ export class ExplorarPage implements OnInit {
   
 
   constructor(
-    // private route: ActivatedRoute,
     private service: ServicesService,
      private storage: StorageService
   ) {
   }
   
-  // public users = this.storage.allUsers();
   public async searchUser() {
     this.users = await this.service.getUsers(this.username);
-    // this.storage.addRecentUser(this.username);
   }
 
   public async getUser() {
    this.storage.addRecentUser(this.username);
-   // this.user = await this.service.getUser(this.username);
   }
   
   ngOnInit() {}
