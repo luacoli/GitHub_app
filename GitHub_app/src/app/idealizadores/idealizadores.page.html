@@ -35,7 +35,7 @@
                     <h3>{{luana.following}}</h3>
                 </ion-label>
             </ion-item>
-            <ion-button href="/visualizar-repositorios" class="button-fill">
+            <ion-button [routerLink]="['/visualizar-repositorios', luana.login]" class="button-fill">
                 Veja meus repos
                 <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
             </ion-button>
@@ -74,7 +74,7 @@
                     <h3>{{guilherme.following}}</h3>
                 </ion-label>
             </ion-item>
-            <ion-button href="/visualizar-repositorios" class="button-fill">
+            <ion-button [routerLink]="['/visualizar-repositorios', guilherme.login]" class="button-fill">
                 Veja meus repos
                 <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
             </ion-button>
@@ -113,7 +113,7 @@
                     <h3>{{noelen.following}}</h3>
                 </ion-label>
             </ion-item>
-            <ion-button href="/visualizar-repositorios" class="button-fill">
+            <ion-button [routerLink]="['/visualizar-repositorios', noelen.login]" class="button-fill">
                 Veja meus repos
                 <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
             </ion-button>
@@ -152,7 +152,7 @@
                     <h3>{{mateus.following}}</h3>
                 </ion-label>
             </ion-item>
-            <ion-button href="/visualizar-repositorios" class="button-fill">
+            <ion-button [routerLink]="['/visualizar-repositorios', mateus.login]" class="button-fill">
                 Veja meus repos
                 <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
             </ion-button>
@@ -192,7 +192,7 @@
                     <h3>{{messias.following}}</h3>
                 </ion-label>
             </ion-item>
-            <ion-button href="/visualizar-repositorios" class="button-fill">
+            <ion-button [routerLink]="['/visualizar-repositorios', messias.login]" class="button-fill">
                 Veja meus repos
                 <ion-icon slot="end" name="arrow-forward-circle-outline"></ion-icon>
             </ion-button>
