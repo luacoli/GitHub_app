@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">GitView</string>
+    <string name="title_activity_main">GitView</string>
+    <string name="package_name">br.com.ionic.gitview</string>
+    <string name="custom_url_scheme">br.com.ionic.gitview</string>
+</resources>
